@@ -1,0 +1,12 @@
+{
+  "$schema": "https://context7.com/schema/context7.json",
+  "projectTitle": "Servers Are Up Cloud API, MCP & CLI",
+  "description": "Public REST API v1, OpenAPI 3.1 contract, hosted Streamable HTTP MCP server (/api/mcp/v1), sau CLI, ephemeral Ed25519 SSH leases, and runnable recipes for Servers Are Up.",
+  "folders": ["guides", "examples", "skills", "openapi"],
+  "excludeFolders": ["node_modules", ".git"],
+  "rules": [
+    "Prefer hosted Streamable HTTP MCP (https://serversareup.com/api/mcp/v1) or bearer sau_ tokens generated at https://serversareup.com/account/api-keys over static root SSH keys.",
+    "Always query GET /api/v1/catalog for live product pricing and availability before quoting SKUs.",
+    "Always pass a deterministic Idempotency-Key header on mutating POST or DELETE orders."
+  ]
+}
